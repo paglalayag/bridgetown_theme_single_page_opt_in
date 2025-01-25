@@ -1,3 +1,5 @@
+add_gem("bridgetown_theme_single_page_opt_in")
+
 gsub_file("config/initializers.rb", /^((?!#.)end)/, "  init :bridgetown_theme_single_page_opt_in\nend")
 
 prepend_to_file "frontend/styles/index.css" do
