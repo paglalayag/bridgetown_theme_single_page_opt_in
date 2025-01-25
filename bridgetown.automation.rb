@@ -7,6 +7,6 @@ prepend_to_file "frontend/styles/index.css" do
 	# "@import url("./lander.css");"
 end
 
-copy_file("spoi_data/data/1_top_banner.yml", "src/_data/1_top_banner.yml")
+# copy_file("spoi_data/data/1_top_banner.yml", "src/_data/1_top_banner.yml")
 
 # Read the Automations documentation: https://www.bridgetownrb.com/docs/automations
