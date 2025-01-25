@@ -1,0 +1,20 @@
+<meta charset="utf-8" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% capture resource_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
+<title>{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
+
+<meta name="description" content="{{ metadata.description }}" />
+<meta property="og:image" content="{{ metadata.og-image }}" id="social-image">
+<meta property="og:title" content="{{ metadata.og-title }}">
+<meta property="og:description" content="{{ metadata.og-description }}">
+<meta property="og:url" content="{{ metadata.og-url }}">
+<link rel="canonical" href="{{ metadata.canonical }}">
+  <link rel="icon" type="image/x-icon" href="/images/ss-favicon-32.ico">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="{% asset_path css %}" />
+<script src="{% asset_path js %}" defer></script>
+
+<link rel="icon" type="image/png" href="/images/favicon.png">

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="containerWrapper">
+  {% render "1_top_banner", data: site.data.1_top_banner, event: site.data.event_details %}
+  {% render "2_offer_hook", data: site.data.2_offer_hook, button: site.data.6_cta_button, event: site.data.event_details %}
+  {% render "3_anchor_banner_text", data: site.data.3_anchor_banner %}
+  {% render "3_anchor_banner", data: site.data.3_anchor_banner %}
+  {% render "4_vehicle_text", data: site.data.4_vehicle_text, button: site.data.5_cta_button %}
+  {% render "3_anchor_text", data: site.data.3_anchor_text %}
+  {% render "5_bonus_offer", data: site.data.5_bonus_offer %}
+  {% render "6_cta_button", data: site.data.6_cta_button %}
+  <div class="container noTopMargin padding40-top padding40-bottom padding40H noBorder borderSolid border3px  radius0  activeSection_topBorder0 activeSection_bottomBorder0 fullContainer  bgCover" style="background-color: var(--blue); padding-top: 0px; padding-bottom: 75px; outline: none; margin-top: 0px;">
+      <div class="containerInner ui-sortable" style="padding-left: 100px; padding-right: 100px;">
+        {% render "7_testimonials", data: site.data.7_testimonials %}
+        {% render "8_payment_link", data: site.data.8_payment_link %}
+      </div>
+  </div>
+</div>
+
+{% render "signup_form", data: site.data.signup_form %}
+{% render "loading_text" %}
+<div class="event-start-expiration" style="display: none;">
+  {{ site.data.event_details.seminar_date }}</div>
+<div class="show-cart-expiration" style="display: none;">
+  {{ site.data.event_details.show_link_time }}</div>
+<div class="hide-cart-expiration" style="display: none;">
+  {{ site.data.event_details.close_cart_time }}</div>
