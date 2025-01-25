@@ -21,7 +21,6 @@ Bridgetown.initializer :bridgetown_theme_single_page_opt_in do |config|
     origin: SinglePageOptInTheme,
     components: File.expand_path("../components", __dir__),
     layouts: File.expand_path("../layouts", __dir__),
-    content: File.expand_path("../content", __dir__),
-    spoi_data: File.expand_path("../data", __dir__)
+    content: File.expand_path("../content", __dir__)
   )
 end
