@@ -790,6 +790,7 @@ create_file "src/images/guide-teaser.svg" do
     </svg>"
 end
 
+remove_file("frontend/styles/index.css")
 create_file "frontend/styles/index.css" do
 "@import url(\"./lander.css\");
 
