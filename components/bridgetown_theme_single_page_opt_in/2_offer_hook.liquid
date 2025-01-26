@@ -4,7 +4,9 @@
         <div class="innerContent  ui-resizable col-md-5" style="outline: none;">
           <div class="col-inner bgCover  noBorder borderSolid border3px  radius0  P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
             <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" style="margin-top: 0px; outline: none; cursor: pointer;" data-hide-on="desktop" aria-disabled="false">
-              <img src="{{ data.image }}" class="elIMG ximg" alt="" data-lazy-loading="false" tabindex="0">
+              <object data="{{ data.svg }}" type="image/svg+xml">
+                <img src="{{ data.image }}" class="elIMG ximg" alt="" data-lazy-loading="false" tabindex="0">
+              </object>
             </div>
           </div>
         </div>
