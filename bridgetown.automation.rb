@@ -4,14 +4,6 @@ add_gem("dotenv")
 gsub_file("config/initializers.rb", /^((?!#.)end)/, "  init :bridgetown_theme_single_page_opt_in\nend")
 gsub_file("src/index.md", "layout: default", "layout: bridgetown_theme_single_page_opt_in/landing")
 
-prepend_to_file "frontend/styles/index.css" do
-    "@import \"bridgetown_theme_single_page_opt_in/frontend/styles/index.css\";\n"
-end
-
-prepend_to_file "frontend/styles/index.css" do
-    "@import url(\"./lander.css\");\n"
-end
-
 remove_file("src/_data/site_metadata.yml")
 create_file "src/_data/site_metadata.yml" do
   <<~YAML
@@ -796,6 +788,79 @@ create_file "src/images/guide-teaser.svg" do
     -30z\"/>
     </g>
     </svg>"
+end
+
+create_file "frontend/styles/index.css" do
+"@import url(\"./lander.css\");
+
+:root {
+  --blue: #084b91;
+  --pale-blue: #084b91bf;
+  --light-blue: #b4d3f2;
+  --white: #ffffff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup h2 {
+  margin: 10px;
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 85%;
+  }
+  .popup{
+    width: 85%;
+  }
+}"
 end
 
 create_file "frontend/styles/lander.css" do
