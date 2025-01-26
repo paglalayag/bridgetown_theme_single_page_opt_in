@@ -18,7 +18,7 @@ create_file "src/_data/site_metadata.yml" do
     fb_page: https://www.facebook.com/groups/yourdomain/
     description: >-
       Your spunky catchline and theme about the beneficial outcome you want your customers to capitalize on
-    og-image: images/seasonally-stoked-logo.png
+    og-image: images/your-logo.png
     og-title: Your Site's name
     og-description: >-
       Your spunky catchline and theme about the beneficial outcome you want your customers to capitalize on 
@@ -47,8 +47,7 @@ create_file "src/_data/2_offer_hook.yml" do
     anchor:  So practice developing your rapport with a regular FREE webinar series.  During this series, you will do regular check-ins with those who identify with the <b>problem you've set out to solve</b> and, when ready, try offering a product or service that you are well positioned to help them solve!
     optin_bonus: PLUS, if you've been doing your homework, you've got lots of hard-earned knowledge that can help them move forward with their problems (maybe with <i>solutions or opportunities</i> they aren't even aware of yet). A confident, empowered buyer is a buyer equipped to succeed!
     disclaimer: <b>NOTE:</b> "It takes 20 years to build a reputation and five minutes to ruin it. - Warren Buffett" Sales and Marketing are both skills that are developed through training.  Most likely, if you are venturing into these methods, you are striking off on your own with small budget, resources and a product or service that may have room for improvement. <i>MAKE SURE</i> to be <b>UP-FRONT and STRAIGHTFORWARD</b> with your audience!! <br><br><u><i>There are laws involved with making commercial offers.  Make sure to check with your country.</i></u>
-    svg: /images/succeeding_prospect.svg
-    image: nil
+    image: /images/succeeding_prospect.svg
   YAML
 end
 
@@ -56,8 +55,7 @@ create_file "src/_data/3_anchor_banner.yml" do
   <<~YAML
     context_setter: This FREE Webinar will get YOU acquainted with
     wiift: Online Sales and via a SINGLE LANDING PAGE!!!
-    svg: /images/theme-banner.svg
-    image: nil
+    image: /images/theme-banner.svg
   YAML
 end
 
@@ -78,8 +76,7 @@ create_file "src/_data/4_vehicle_text.yml" do
   <<~YAML
     headline: <b>Here's what's inside...</b>
     text: <i>1. The main item (of course) <br>2. accessories ensure the prospect is ready to go on day 1 <br>3. Setup guide (esp for new products)<br></i>
-    svg: images/kit-pic-package.svg
-    image: nil
+    image: images/kit-pic-package.svg
   YAML
 end
 
@@ -87,8 +84,7 @@ create_file "src/_data/5_bonus_offer.yml" do
   <<~YAML
     headline: <b>Plus! When You Attend,</b>
     text: You'll <b>get a FREE Copy Of <u>Strategies for Improving on your Problem Statement’,</u> complete with <i>tips</i> for building <i>Street Cred</i> and get rolling with your own entrepreneurial voice faster!
-    svg: images/guide-teaser.syg
-    image: nil
+    image: images/guide-teaser.syg
   YAML
 end
 
@@ -131,7 +127,7 @@ create_file "src/_data/cta_button.yml" do
   YAML
 end
 
-create_file "images/succeeding_prospect.svg" do
+create_file "src/images/succeeding_prospect.svg" do
     "<svg height=\"300\" width=\"320\" xmlns=\"http://www.w3.org/2000/svg\">
         <g transform=\"translate(0.000000,319.000000) scale(0.100000,-0.100000)\"
         fill=\"#000000\" stroke=\"none\">
@@ -208,7 +204,7 @@ create_file "images/succeeding_prospect.svg" do
     </svg>"
 end
 
-create_file "images/above-the-fold.svg" do
+create_file "src/images/above-the-fold.svg" do
     "<svg version=\"1.0\" xmlns=\"http://www.w3.org/2000/svg\"
      width=\"300.000000pt\" height=\"136.000000pt\" viewBox=\"0 0 300.000000 136.000000\"
      preserveAspectRatio=\"xMidYMid meet\">
@@ -423,7 +419,7 @@ create_file "images/above-the-fold.svg" do
     </svg>"
 end
 
-create_file "images/kit-pic.svg" do
+create_file "src/images/kit-pic.svg" do
     "<svg version=\"1.0\" xmlns=\"http://www.w3.org/2000/svg\"
      width=\"300.000000pt\" height=\"345.000000pt\" viewBox=\"0 0 300.000000 345.000000\"
      preserveAspectRatio=\"xMidYMid meet\">
@@ -556,7 +552,7 @@ create_file "images/kit-pic.svg" do
     </svg>"
 end
 
-create_file "images/guide-teaser.svg" do
+create_file "src/images/guide-teaser.svg" do
     "<svg version=\"1.0\" xmlns=\"http://www.w3.org/2000/svg\"
      width=\"300.000000pt\" height=\"332.000000pt\" viewBox=\"0 0 300.000000 332.000000\"
      preserveAspectRatio=\"xMidYMid meet\">
