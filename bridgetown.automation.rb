@@ -2,6 +2,7 @@ add_gem("bridgetown_theme_single_page_opt_in")
 add_gem("dotenv")
 
 gsub_file("config/initializers.rb", /^((?!#.)end)/, "  init :bridgetown_theme_single_page_opt_in\nend")
+gsub_file("layout: default", , "layout: bridgetown_theme_single_page_opt_in/landing")
 
 prepend_to_file "frontend/styles/index.css" do
 	"@import \"bridgetown_theme_single_page_opt_in/frontend/styles/index.css\";"
