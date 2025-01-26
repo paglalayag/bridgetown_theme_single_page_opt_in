@@ -129,7 +129,7 @@ end
 
 create_file "src/_data/footer.yml" do
   <<~YAML
-    copyright: "©{{ "now" | date: '%Y' }} {{ site_metadata.domain }}. All Rights Reserved."
+    copyright: "©{{ Time.now.strftime('%Y') }} {{ site_metadata.title }}. All Rights Reserved."
     address: your address
     disclaimer: Any notices you might want your visitors to consider.
     warning: Sometimes visitors will show up with unreasonable expectations/impressions when reading your content
