@@ -1,0 +1,24 @@
+<div class="row bgCover noBorder borderSolid border3px  radius0  P0-top P0-bottom P0H noTopMargin" style="padding: 20px 0px; margin: 0px; outline: none;">
+  <div class="col-md-6 innerContent col_right ui-resizable" style="outline: none;">
+    <div class="col-inner bgCover  noBorder borderSolid border3px  radius0  P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
+      {% for benefit in data.benefits1 %}
+        <div class="de elHeadlineWrapper ui-droppable de-editable" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Lato, Helvetica, sans-serif !important;" aria-disabled="false" data-google-font="Lato">
+          <div class="ne elHeadline hsSize2 elMargin0 elBGStyle0  denormalnone22 lh4 mfs_18" style="text-align: left; font-size: 20px; color: rgb(0, 0, 0);">
+            <i class="fa_prepended fas fa-check-square" style="color: var(--blue);" contenteditable="false"></i>&nbsp;<b>{{ benefit }}</b>!
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-md-6 innerContent col_right ui-resizable" style="outline: none;">
+    <div class="col-inner bgCover  noBorder borderSolid border3px  radius0  P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
+      {% for benefit in data.benefits2 %}
+        <div class="de elHeadlineWrapper ui-droppable de-editable" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Lato, Helvetica, sans-serif !important;" aria-disabled="false" data-google-font="Lato">
+          <div class="ne elHeadline hsSize2 elMargin0 elBGStyle0  denormalnone22 lh4 mfs_18" style="text-align: left; font-size: 20px; color: rgb(0, 0, 0);">
+            <i class="fa_prepended fas fa-check-square" style="color: var(--blue);" contenteditable="false"></i>&nbsp;<b>{{ benefit }}</b>!
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
