@@ -5,8 +5,8 @@ gsub_file("config/initializers.rb", /^((?!#.)end)/, "  init :bridgetown_theme_si
 gsub_file("src/index.md", "layout: default", "layout: bridgetown_theme_single_page_opt_in/landing")
 
 prepend_to_file "frontend/styles/index.css" do
-    "@import \"bridgetown_theme_single_page_opt_in/frontend/styles/index.css\";"
-    "@import url(\"./lander.css\");"
+    "@import \"bridgetown_theme_single_page_opt_in/frontend/styles/index.css\";\n"
+    "@import url(\"./lander.css\");\n"
 end
 
 remove_file("src/_data/site_metadata.yml")
