@@ -58,7 +58,7 @@ create_file "src/_data/3_anchor_banner.yml" do
   <<~YAML
     context_setter: This FREE Webinar will get YOU acquainted with
     wiift: Online Sales and via a SINGLE LANDING PAGE!!!
-    image: /images/theme-banner.svg
+    image: /images/above-the-fold.svg
   YAML
 end
 
@@ -79,7 +79,7 @@ create_file "src/_data/4_vehicle_text.yml" do
   <<~YAML
     headline: <b>Here's what's inside...</b>
     text: <i>1. The main item (of course) <br>2. accessories ensure the prospect is ready to go on day 1 <br>3. Setup guide (esp for new products)<br></i>
-    image: images/kit-pic-package.svg
+    image: images/kit-pic.svg
   YAML
 end
 
@@ -87,7 +87,7 @@ create_file "src/_data/5_bonus_offer.yml" do
   <<~YAML
     headline: <b>Plus! When You Attend,</b>
     text: You'll <b>get a FREE Copy Of <u>Strategies for Improving on your Problem Statement’,</u> complete with <i>tips</i> for building <i>Street Cred</i> and get rolling with your own entrepreneurial voice faster!
-    image: images/guide-teaser.syg
+    image: images/guide-teaser.svg
   YAML
 end
 
@@ -111,7 +111,7 @@ create_file "src/_data/7_testimonials.yml" do
         name: Ranielle
         text: nil
         video: VtvBelreKdg
-    row 3:
+    row3:
       left:
         name: PhRUG 
         text: nil
