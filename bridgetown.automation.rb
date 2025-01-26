@@ -6,7 +6,7 @@ gsub_file("src/index.md", "layout: default", "layout: bridgetown_theme_single_pa
 
 prepend_to_file "frontend/styles/index.css" do
     "@import \"bridgetown_theme_single_page_opt_in/frontend/styles/index.css\";"
-    # "@import url("./lander.css");"
+    "@import url(\"./lander.css\");"
 end
 
 remove_file("src/_data/site_metadata.yml")
