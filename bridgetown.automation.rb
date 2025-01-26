@@ -127,6 +127,17 @@ create_file "src/_data/cta_button.yml" do
   YAML
 end
 
+create_file "src/_data/footer.yml" do
+  <<~YAML
+    copyright: "©{{ "now" | date: '%Y' }} {{ site_metadata.domain }}. All Rights Reserved."
+    address: your address
+    disclaimer: Any notices you might want your visitors to consider.
+    warning: Sometimes visitors will show up with unreasonable expectations/impressions when reading your content
+    terms_url: "/terms-and-policies"
+  YAML
+end
+
+
 create_file "src/images/succeeding_prospect.svg" do
     "<svg height=\"300\" width=\"320\" xmlns=\"http://www.w3.org/2000/svg\">
         <g transform=\"translate(0.000000,319.000000) scale(0.100000,-0.100000)\"
