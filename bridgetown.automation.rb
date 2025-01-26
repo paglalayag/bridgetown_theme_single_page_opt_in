@@ -51,6 +51,14 @@ create_file "src/_data/2_offer_hook.yml" do
   YAML
 end
 
+create_file "src/_data/cta_button.yml" do
+  <<~YAML
+    text: Platforms come and go, email remains layer zero for the internet.  Not a fan of tracking? Try Scattergun.
+    url: "https://scattergun.email/home"
+    form_toggle: 1234567
+  YAML
+end
+
 create_file "images/succeeding_prospect.svg" do
     "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 319\">
         <path d=\"M2699 3186 c-2 -2 -83 -6 -179 -10 -96 -4 -188 -10 -205 -12 -16 -3 -95 -5 -175 -3 -483 7 -610 3 -965 -31 -55 -5 -129 -12 -165 -15 -36 -3 -103 -8 -150 -12 -105 -8 -202 -8 -410 2 -159 7 -240 2 -240 -16 0 -5 20 -9 44 -9 l44 0 -5 -62 c-2 -35 -8 -100 -12 -145 -4 -45 -6 -146 -5 -225 5 -325 5 -580 0 -688 -3 -63 -8 -176 -11 -250 -7 -187 -16 -367 -21 -415 -2 -22 -6 -186 -9 -365 -5 -284 -3 -328 10 -345 28 -36 35 1 36 200 0 105 2 215 4 245 2 30 6 111 10 180 3 69 10 206 15 305 24 479 27 635 21 1065 -2 164 3 303 14 395 3 22 1 55 -4 73 -9 29 -8 33 5 28 74 -28 384 -31 729 -7 485 34 690 43 895 37 120 -4 257 -2 310 3 52 5 178 13 280 16 102 3 195 8 208 11 23 5 30 28 10 40 -13 8 -72 16 -79 10z\"/>
