@@ -9,13 +9,13 @@ prepend_to_file "frontend/styles/index.css" do
     # "@import url("./lander.css");"
 end
 
-empty_directory("src/_data")
 create_file "src/_data/1_top_banner.yml" do
   <<~YAML
     headline:  <b>ATTN:</b> Call out to your dream customer!! Get set for <u>AWESOME</u> outcomes from taking action!!
   YAML
 end
 
+remove_file("src/_data/site_metadata.yml")
 create_file "src/_data/site_metadata.yml" do
   <<~YAML
     title: Your Site's name
