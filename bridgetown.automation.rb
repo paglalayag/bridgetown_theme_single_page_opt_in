@@ -424,7 +424,7 @@ create_file "images/above-the-fold.svg" do
     -21 5 -40 14 -15 13 -20 -9 -53 -28 -41 -20 -58 11 -24 17 18 63 109 63 123 0
     13 -21 1 -31 -18z\"/>
     </g>
-    </svg>\"
+    </svg>"
 end
 
 create_file "images/kit-pic.svg" do
