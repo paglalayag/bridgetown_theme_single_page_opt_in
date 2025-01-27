@@ -5,7 +5,7 @@ gsub_file("config/initializers.rb", /^((?!#.)end)/, "  init :bridgetown_theme_si
 gsub_file("src/index.md", "layout: default", "layout: bridgetown_theme_single_page_opt_in/landing")
 
 prepend_to_file "frontend/javascript/index.js" do
- "import \"./lander.js\""
+ "import \"./lander.js\"\n"
 end
 
 create_file "frontend/javascript/lander.js" do
