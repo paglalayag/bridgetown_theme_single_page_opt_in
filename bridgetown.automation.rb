@@ -246,17 +246,17 @@ end
 create_file "src/_data/event_details.yml" do
   <<~YAML
   opener: "LIVE, Seminar Begins: "
-  date: (Time.now + 5 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  date: (Time.now + 5 * 60)
   timezone: EDT
-  seminar_date: (Time.now + 5 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
-  show_link_time: (Time.now + 7 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
-  close_cart_time: (Time.now + 10 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  seminar_date: (Time.now + 5 * 60)
+  show_link_time: (Time.now + 7 * 60)
+  close_cart_time: (Time.now + 10 * 60)
   YAML
 end
 
 create_file "src/_data/footer.yml" do
   <<~YAML
-    copyright: "©{{ Time.now.strftime('%Y') }} {{ site_metadata.title }}. All Rights Reserved."
+    copyright: ©{{ Time.now.strftime('%Y') }} {{ site_metadata.title }}. All Rights Reserved.
     address: your address
     disclaimer: Any notices you might want your visitors to consider.
     warning: If visitors start showing up with misaligned expectations/impressions, you could clarify here
