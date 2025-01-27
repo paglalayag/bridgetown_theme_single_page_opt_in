@@ -182,12 +182,12 @@ create_file "src/_data/3_anchor_text.yml" do
   <<~YAML
     benefits1:
       - These are benefits gained by attending the webinar, NOT the benefits of the product/service itself
-      - You need your prospect on the same page as you regarding why you are both taking time out of your day for this.
-      - The Prospect should only decide to attend if you are solving a problem that they are motivated to solve.
+      - You need your prospect on the same page as you regarding why you are both taking time out of your day for this
+      - The Prospect should only decide to attend if you are solving a problem that they are motivated to solve
     benefits2:
-      - EX1: How your product/service helps your prospect with the <u>Problem Statement</u> you are tackling with/for them.
-      - EX2: Why this package you are offering helps them solve it better than anyone around.
-      - EX3: How your prospect will be able to take tangible, proactive steps post-engagement to keep their momentum going.
+      - "sample1: How your product/service helps your prospect with the <u>Problem Statement</u> you are tackling with/for them"
+      - "sample 2: Why this package you are offering helps them solve it better than anyone around"
+      - "sample 3: How your prospect will be able to take tangible, proactive steps post-engagement to keep their momentum going"
   YAML
 end
 
@@ -218,7 +218,7 @@ create_file "src/_data/7_testimonials.yml" do
         video: MSr1BFYG7uQ
       right:
         name: Jojo
-        text: Ve brave, those who are successful are the ones who dare to go beyond what they can see.
+        text: Be brave, those who are successful are the ones who dare to go beyond what they can see.
     row2:  
       left:
         name: Jay
@@ -240,7 +240,7 @@ end
 
 create_file "src/_data/cta_button.yml" do
   <<~YAML
-    text: Give your prospects the ability to hear from you! Platforms come and go, email remains layer zero for the internet.  Not a fan of tracking? Try Scattergun.
+    text: Give your prospects the ability to hear from you! Not a fan of tracking? Try Scattergun.
     url: "https://scattergun.email/home"
     form_toggle: 1234567
   YAML
@@ -262,7 +262,7 @@ create_file "src/_data/footer.yml" do
     copyright: "©{{ Time.now.strftime('%Y') }} {{ site_metadata.title }}. All Rights Reserved."
     address: your address
     disclaimer: Any notices you might want your visitors to consider.
-    warning: Sometimes visitors will show up with unreasonable expectations/impressions when reading your content
+    warning: If visitors start showing up with misaligned expectations/impressions, you could clarify here
     terms_url: "/terms-and-policies"
   YAML
 end
