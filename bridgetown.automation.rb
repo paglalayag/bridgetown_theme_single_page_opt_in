@@ -125,11 +125,11 @@ end
 create_file "src/_data/event_details.yml" do
   <<~YAML
   opener: "LIVE, Seminar Begins: "
-  date: {{ (Time.now + 2.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  date: {{ (Time.now + 2 * 60).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
   timezone: EDT
-  seminar_date: {{ (Time.now + 2.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
-  show_link_time: {{ (Time.now + 3.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
-  close_cart_time: {{ (Time.now + 4.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  seminar_date: {{ (Time.now + 2 * 60).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  show_link_time: {{ (Time.now + 3 * 60).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  close_cart_time: {{ (Time.now + 4 * 60).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
   YAML
 end
 
