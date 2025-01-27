@@ -246,11 +246,11 @@ end
 create_file "src/_data/event_details.yml" do
   <<~YAML
   opener: "LIVE, Seminar Begins: "
-  date: (Time.now + 10 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  date: 2026/1/27 22:00:00 EDT
   timezone: EDT
-  seminar_date: (Time.now + 10 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
-  show_link_time: (Time.now + 15 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
-  close_cart_time: (Time.now + 20 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  seminar_date: 2026/1/27 22:00:00 EDT
+  show_link_time: 2026/1/30 22:00:00 EDT
+  close_cart_time: 2026/1/31 22:00:00 EDT
   YAML
 end
 
