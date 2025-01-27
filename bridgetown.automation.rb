@@ -260,14 +260,13 @@ end
 
 create_file "src/_data/footer.yml" do
   <<~YAML
-    copyright: ©{{ Time.now.strftime('%Y') }} {{ site_metadata.title }}. All Rights Reserved.
+    copyright: ©{{ "now" | date('%Y') }} {{ site_metadata.title }}. All Rights Reserved.
     address: your address
     disclaimer: Any notices you might want your visitors to consider.
     warning: If visitors start showing up with misaligned expectations/impressions, you could clarify here
     terms_url: "/terms-and-policies"
   YAML
 end
-
 
 create_file "src/images/succeeding_prospect.svg" do
     "<svg height=\"600\" width=\"640\" xmlns=\"http://www.w3.org/2000/svg\">
