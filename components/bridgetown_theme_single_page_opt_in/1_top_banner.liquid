@@ -5,7 +5,7 @@
         <div class="col-inner bgCover  noBorder borderSolid border3px  radius0  P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de elHeadlineWrapper ui-droppable de-editable"  style="margin-top: 0px; outline: none; cursor: pointer; font-family: Lato, Helvetica, sans-serif !important;" aria-disabled="false" data-google-font="Lato">
             <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0  mfs_16" style="text-align: center; font-size: 22px; color: var(--white);">
-            <%= data.headline %> | <b><u>[<%= event.date %> <%= event.date %> <%= event.timezone %>]</u></b>
+            {{ data.headline }} | <b><u>[{{ event.date | date: "%A, %B %d" }} {{ event.date | date: "%H:%M%P" }} {{ event.timezone }}]</u></b>
            </h1>
           </div>
         </div>
