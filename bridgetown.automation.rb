@@ -799,6 +799,14 @@ create_file "frontend/styles/index.css" do
   --pale-blue: #084b91bf;
   --light-blue: #b4d3f2;
   --white: #ffffff;
+  --light-grey: #ebebeb;
+  --beige: #d9c2a0;
+  --purple: #51204d;
+  --flag-black: #151b29;
+  --dark-red: #8e0f18;
+  --light-red: #d56f6b;
+  --pink: #d7b3c2;
+  --base: $dark-red;
 }
 
 .overlay {

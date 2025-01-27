@@ -81,19 +81,19 @@ const render = (time) => {
     app.innerHTML = `
         <span class="countdown-section">
           <span class="countdown-amount" style="color: rgb(0, 0, 0);">${format(time.days)}</span>
-          <span class="countdown-period" style="color: var(--pale-blue);">Days</span>
+          <span class="countdown-period" style="color: var(--light-red);">Days</span>
         </span>
         <span class="countdown-section">
           <span class="countdown-amount" style="color: rgb(0, 0, 0);">${format(time.hours)}</span>
-          <span class="countdown-period" style="color: var(--pale-blue);">Hours</span>
+          <span class="countdown-period" style="color: var(--light-red);">Hours</span>
         </span>
         <span class="countdown-section">
           <span class="countdown-amount" style="color: rgb(0, 0, 0);">${format(time.minutes)}</span>
-          <span class="countdown-period" style="color: var(--pale-blue);">Minutes</span>
+          <span class="countdown-period" style="color: var(--light-red);">Minutes</span>
         </span>
         <span class="countdown-section">
           <span class="countdown-amount" style="color: rgb(0, 0, 0);">${format(time.seconds)}</span>
-          <span class="countdown-period" style="color: var(--pale-blue);">Seconds</span>
+          <span class="countdown-period" style="color: var(--light-red);">Seconds</span>
         </span>
         `;
 };
