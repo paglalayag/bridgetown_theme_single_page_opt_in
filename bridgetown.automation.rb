@@ -242,7 +242,7 @@ end
 create_file "src/_data/cta_button.yml" do
   <<~YAML
     text: Give your prospects the ability to hear from you! Not a fan of tracking? Try Scattergun.
-    url: "https://scattergun.email/home"
+    url: "https://scattergun.email"
     form_toggle: 1234567
   YAML
 end
