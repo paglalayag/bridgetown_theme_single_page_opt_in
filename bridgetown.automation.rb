@@ -124,6 +124,17 @@ end
 
 create_file "src/_data/footer.yml" do
   <<~YAML
+  opener: "LIVE, Seminar Begins: "
+  date: {{ (Time.now + 2.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  timezone: EDT
+  seminar_date: {{ (Time.now + 2.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  show_link_time: {{ (Time.now + 3.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  close_cart_time: {{ (Time.now + 4.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
+  YAML
+end
+
+create_file "src/_data/footer.yml" do
+  <<~YAML
     copyright: "©{{ Time.now.strftime('%Y') }} {{ site_metadata.title }}. All Rights Reserved."
     address: your address
     disclaimer: Any notices you might want your visitors to consider.
