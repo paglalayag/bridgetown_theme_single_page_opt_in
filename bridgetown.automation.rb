@@ -24,12 +24,12 @@ create_file "frontend/javascript/lander.js" do
                 this.start();
         }
 
-
         complete() {
             if (typeof this.onComplete === 'function') {
                 onComplete();
             }
         }
+
         getTime() {
             return {
                 days: Math.floor(this.timeRemaining / 1000 / 60 / 60 / 24),
@@ -63,7 +63,6 @@ create_file "frontend/javascript/lander.js" do
                 } else {
                     this.update();
                 }
-
             }, 1000);
         }
     }
@@ -78,7 +77,6 @@ create_file "frontend/javascript/lander.js" do
     const app = document.querySelector('.countdown-row');
     const message = document.querySelector('.message');
     const heading = document.querySelector('h1');
-
 
     const format = (t) => {
         return t < 10 ? '0' + t : t;
@@ -104,7 +102,6 @@ create_file "frontend/javascript/lander.js" do
             </span>
             `;
     };
-
 
     const showMessage = () => {
         message.innerHTML = `Happy New Year!`;
@@ -160,12 +157,12 @@ create_file "src/_data/2_offer_hook.yml" do
     subtitle:  Many <b>Pro-Marketers spend 90% of their time</b> tweaking their <u>HEADLINE</u>!! 
     headline:
       opener: <b>You never know what is gonna resonate with your dream customers</b>
-      punchline: <b>"Don't be afraid</b> to tweak this constantly
-      kicker: BUT!! Your job isn't done yet, this landing page is here to make a solid first impression for YOU and <i>your OFFERING</i>
-      qualifier:  Success in business is hinged on your ability to communicate clearly consistently.
-    anchor:  So practice developing your rapport with a regular FREE webinar series.  During this series, you will do regular check-ins with those who identify with the <b>problem you've set out to solve</b> and, when ready, try offering a product or service that you are well positioned to help them solve!
-    optin_bonus: PLUS, if you've been doing your homework, you've got lots of hard-earned knowledge that can help them move forward with their problems (maybe with <i>solutions or opportunities</i> they aren't even aware of yet). A confident, empowered buyer is a buyer equipped to succeed!
-    disclaimer: <b>NOTE:</b> "It takes 20 years to build a reputation and five minutes to ruin it. - Warren Buffett" Sales and Marketing are both skills that are developed through training.  Most likely, if you are venturing into these methods, you are striking off on your own with small budget, resources and a product or service that may have room for improvement. <i>MAKE SURE</i> to be <b>UP-FRONT and STRAIGHTFORWARD</b> with your audience!! <br><br><u><i>There are laws involved with making commercial offers.  Make sure to check with your country.</i></u>
+      punchline: <b>"Don't be afraid</b> to tweak your <u>headline</u>
+      kicker: The job of this page, to satisfy YOUR PROSPECT that <i>your OFFERING</i> solves <i>their PROBLEM</b>
+      qualifier:  Success hinges on your ability to communicate clearly consistently.
+    anchor:  You can practice developing your rapport with a regular FREE webinar series with those who identify with the <b>problem you've set out to solve</b>
+    optin_bonus: PLUS, if you've been doing your homework, you've got lots of hard-earned <i>knowledge, solutions and opportunities</i> that will help you all move forward with their problems. A confident, empowered buyer is a buyer equipped to succeed!
+    disclaimer: <b>NOTE:</b> <i>"It takes 20 years to build a reputation and five minutes to ruin it."</i> - Warren Buffett \n Sales and Marketing are both skills that are developed through training.  \n Most likely, if you are venturing into these methods, you are striking off on your own with small budget, resources and a product or service that may have room for improvement. \n Please be <b>UP-FRONT and STRAIGHTFORWARD</b> with your audience!! <br><br><u><i>There are laws involved with fullfilling commercial offers that you have made.  Make sure to check with your country.</i></u>
     image: /images/succeeding_prospect.svg
   YAML
 end
@@ -249,11 +246,11 @@ end
 create_file "src/_data/event_details.yml" do
   <<~YAML
   opener: "LIVE, Seminar Begins: "
-  date: (Time.now + 2 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  date: (Time.now + 5 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
   timezone: EDT
-  seminar_date: (Time.now + 2 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
-  show_link_time: (Time.now + 3 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
-  close_cart_time: (Time.now + 4 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  seminar_date: (Time.now + 5 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  show_link_time: (Time.now + 7 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
+  close_cart_time: (Time.now + 10 * 60).strftime('%Y/%m/%d %H:%M:%S %Z')
   YAML
 end
 
