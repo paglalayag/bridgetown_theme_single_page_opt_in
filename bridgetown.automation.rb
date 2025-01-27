@@ -162,7 +162,7 @@ create_file "src/_data/2_offer_hook.yml" do
       qualifier:  Success hinges on your ability to communicate clearly consistently.
     anchor:  You can practice developing your rapport with a regular FREE webinar series with those who identify with the <b>problem you've set out to solve</b>
     optin_bonus: PLUS, if you've been doing your homework, you've got lots of hard-earned <i>knowledge, solutions and opportunities</i> that will help you all move forward with their problems. A confident, empowered buyer is a buyer equipped to succeed!
-    disclaimer: <b>NOTE:</b> <i>"It takes 20 years to build a reputation and five minutes to ruin it."</i> - Warren Buffett \n Sales and Marketing are both skills that are developed through training.  \n Most likely, if you are venturing into these methods, you are striking off on your own with small budget, resources and a product or service that may have room for improvement. \n Please be <b>UP-FRONT and STRAIGHTFORWARD</b> with your audience!! <br><br><u><i>There are laws involved with fullfilling commercial offers that you have made.  Make sure to check with your country.</i></u>
+    disclaimer: <b>NOTE:</b> <i>"It takes 20 years to build a reputation and five minutes to ruin it."</i><br> <u>- Warren Buffett</u> <br> Sales and Marketing are both skills that are developed through training.  <br> Most likely, if you are venturing into these methods, you are striking off on your own with small budget, resources and a product or service that may have room for improvement. \n Please be <b>UP-FRONT and STRAIGHTFORWARD</b> with your audience!! <br><br><u><i>There are laws involved with fullfilling commercial offers that you have made.  Make sure to check with your country.</i></u>
     image: /images/succeeding_prospect.svg
   YAML
 end
@@ -266,8 +266,8 @@ end
 
 
 create_file "src/images/succeeding_prospect.svg" do
-    "<svg height=\"300\" width=\"320\" xmlns=\"http://www.w3.org/2000/svg\">
-        <g transform=\"translate(0.000000,319.000000) scale(0.100000,-0.100000)\"
+    "<svg height=\"600\" width=\"640\" xmlns=\"http://www.w3.org/2000/svg\">
+        <g transform=\"translate(0,639) scale(0.100000,-0.100000)\"
         fill=\"#000000\" stroke=\"none\">
             <path id=\"lineAB\" d=\"M2699 3186 c-2 -2 -83 -6 -179 -10 -96 -4 -188 -10 -205 -12 -16 -3 -95 -5 -175 -3 -483 7 -610 3 -965 -31 -55 -5 -129 -12 -165 -15 -36 -3 -103 -8 -150 -12 -105 -8 -202 -8 -410 2 -159 7 -240 2 -240 -16 0 -5 20 -9 44 -9 l44 0 -5 -62 c-2 -35 -8 -100 -12 -145 -4 -45 -6 -146 -5 -225 5 -325 5 -580 0 -688 -3 -63 -8 -176 -11 -250 -7 -187 -16 -367 -21 -415 -2 -22 -6 -186 -9 -365 -5 -284 -3 -328 10 -345 28 -36 35 1 36 200 0 105 2 215 4 245 2 30 6 111 10 180 3 69 10 206 15 305 24 479 27 635 21 1065 -2 164 3 303 14 395 3 22 1 55 -4 73 -9 29 -8 33 5 28 74 -28 384 -31 729 -7 485 34 690 43 895 37 120 -4 257 -2 310 3 52 5 178 13 280 16 102 3 195 8 208 11 23 5 30 28 10 40 -13 8 -72 16 -79 10z\" stroke=\"red\" stroke-width=\"4\"/>
             <path d=\"M2805 3153 c-3 -15 -6 -214 -4 -443 2 -476 -4 -678 -37 -1205 -8
