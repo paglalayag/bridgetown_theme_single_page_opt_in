@@ -161,8 +161,8 @@ create_file "src/_data/2_offer_hook.yml" do
     headline:
       opener: <b>You never know what is gonna resonate with your dream customers</b>
       punchline: <b>"Don't be afraid</b> to tweak this constantly
-    kicker: BUT!! Your job isn't done yet, this landing page is here to make a solid first impression for YOU and <i>your OFFERING</i>
-    qualifier:  Success in business is hinged on your ability to communicate clearly consistently.
+      kicker: BUT!! Your job isn't done yet, this landing page is here to make a solid first impression for YOU and <i>your OFFERING</i>
+      qualifier:  Success in business is hinged on your ability to communicate clearly consistently.
     anchor:  So practice developing your rapport with a regular FREE webinar series.  During this series, you will do regular check-ins with those who identify with the <b>problem you've set out to solve</b> and, when ready, try offering a product or service that you are well positioned to help them solve!
     optin_bonus: PLUS, if you've been doing your homework, you've got lots of hard-earned knowledge that can help them move forward with their problems (maybe with <i>solutions or opportunities</i> they aren't even aware of yet). A confident, empowered buyer is a buyer equipped to succeed!
     disclaimer: <b>NOTE:</b> "It takes 20 years to build a reputation and five minutes to ruin it. - Warren Buffett" Sales and Marketing are both skills that are developed through training.  Most likely, if you are venturing into these methods, you are striking off on your own with small budget, resources and a product or service that may have room for improvement. <i>MAKE SURE</i> to be <b>UP-FRONT and STRAIGHTFORWARD</b> with your audience!! <br><br><u><i>There are laws involved with making commercial offers.  Make sure to check with your country.</i></u>
