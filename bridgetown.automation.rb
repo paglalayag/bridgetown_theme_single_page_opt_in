@@ -122,7 +122,7 @@ create_file "src/_data/cta_button.yml" do
   YAML
 end
 
-create_file "src/_data/footer.yml" do
+create_file "src/_data/event_details.yml" do
   <<~YAML
   opener: "LIVE, Seminar Begins: "
   date: {{ (Time.now + 2.minutes).strftime('%Y/%m/%d %H:%M:%S %Z') }} 
